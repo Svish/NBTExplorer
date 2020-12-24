@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
+using System.Linq;
 using NBTExplorer.Model;
 
 namespace NBTExplorer
@@ -50,7 +51,19 @@ namespace NBTExplorer
             bool mName = SearchName == null;
             bool mValue = SearchValue == null;
 
-            if (SearchName != null) {
+            if (node.Parent != null && SearchName != null && SearchValue != null && SearchName.Contains(','))
+            {
+                var names = SearchName.Split(',');
+                var values = SearchValue.Split(',');
+                if (names.Length == values.Length)
+                    return names
+                        .Select((name, i) => new { Name = name, Value = values[i] })
+                        .All(search => node.Parent.Nodes.Any(n => n.NodeName == search.Name && n.NodeDisplay.Contains(search.Value)));
+            }
+
+
+            if (SearchName != null)
+            {
                 string tagName = node.NodeName;
                 if (tagName != null)
                     mName = CultureInfo.InvariantCulture.CompareInfo.IndexOf(tagName, SearchName, CompareOptions.IgnoreCase) >= 0;

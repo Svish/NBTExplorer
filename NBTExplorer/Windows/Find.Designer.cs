@@ -11,9 +11,10 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose (bool disposing)
+        protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null)) {
+            if (disposing && (components != null))
+            {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -25,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent ()
+        private void InitializeComponent()
         {
             this._cbName = new System.Windows.Forms.CheckBox();
             this._cbValue = new System.Windows.Forms.CheckBox();
@@ -33,6 +34,7 @@
             this._textValue = new System.Windows.Forms.TextBox();
             this._buttonFind = new System.Windows.Forms.Button();
             this._buttonCancel = new System.Windows.Forms.Button();
+            this._cbMultiSearchHint = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // _cbName
@@ -57,28 +59,28 @@
             // 
             // _textName
             // 
-            this._textName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this._textName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this._textName.Location = new System.Drawing.Point(76, 12);
             this._textName.Name = "_textName";
-            this._textName.Size = new System.Drawing.Size(273, 20);
+            this._textName.Size = new System.Drawing.Size(333, 20);
             this._textName.TabIndex = 2;
             this._textName.TextChanged += new System.EventHandler(this._textName_TextChanged);
             // 
             // _textValue
             // 
-            this._textValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this._textValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this._textValue.Location = new System.Drawing.Point(76, 34);
             this._textValue.Name = "_textValue";
-            this._textValue.Size = new System.Drawing.Size(273, 20);
+            this._textValue.Size = new System.Drawing.Size(333, 20);
             this._textValue.TabIndex = 3;
             this._textValue.TextChanged += new System.EventHandler(this._textValue_TextChanged);
             // 
             // _buttonFind
             // 
             this._buttonFind.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this._buttonFind.Location = new System.Drawing.Point(274, 65);
+            this._buttonFind.Location = new System.Drawing.Point(334, 65);
             this._buttonFind.Name = "_buttonFind";
             this._buttonFind.Size = new System.Drawing.Size(75, 23);
             this._buttonFind.TabIndex = 4;
@@ -90,7 +92,7 @@
             // 
             this._buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this._buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this._buttonCancel.Location = new System.Drawing.Point(193, 65);
+            this._buttonCancel.Location = new System.Drawing.Point(253, 65);
             this._buttonCancel.Name = "_buttonCancel";
             this._buttonCancel.Size = new System.Drawing.Size(75, 23);
             this._buttonCancel.TabIndex = 5;
@@ -98,13 +100,23 @@
             this._buttonCancel.UseVisualStyleBackColor = true;
             this._buttonCancel.Click += new System.EventHandler(this._buttonCancel_Click);
             // 
+            // _cbMultiSearchHint
+            // 
+            this._cbMultiSearchHint.ForeColor = System.Drawing.SystemColors.Highlight;
+            this._cbMultiSearchHint.Location = new System.Drawing.Point(32, 60);
+            this._cbMultiSearchHint.Name = "_cbMultiSearchHint";
+            this._cbMultiSearchHint.Size = new System.Drawing.Size(193, 35);
+            this._cbMultiSearchHint.TabIndex = 6;
+            this._cbMultiSearchHint.Text = "(For multiple, type e.g. \"x,y,z\" in Name and \"404,82,475\" in Value)";
+            // 
             // Find
             // 
             this.AcceptButton = this._buttonFind;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this._buttonCancel;
-            this.ClientSize = new System.Drawing.Size(361, 100);
+            this.ClientSize = new System.Drawing.Size(421, 100);
+            this.Controls.Add(this._cbMultiSearchHint);
             this.Controls.Add(this._buttonCancel);
             this.Controls.Add(this._buttonFind);
             this.Controls.Add(this._textValue);
@@ -129,5 +141,6 @@
         private System.Windows.Forms.TextBox _textValue;
         private System.Windows.Forms.Button _buttonFind;
         private System.Windows.Forms.Button _buttonCancel;
+        private System.Windows.Forms.Label _cbMultiSearchHint;
     }
 }
