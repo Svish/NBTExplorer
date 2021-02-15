@@ -1,4 +1,5 @@
-# NBTExplorer
+# NBTExplorer Reloaded
+NBTExplorer Reloaded is an improved and rework of NBTExplorer
 
 NBTExplorer is an open-source NBT editor for all common sources of NBT data.  It's mainly intended for editing [Minecraft](http://www.minecraft.net) game data.
 
