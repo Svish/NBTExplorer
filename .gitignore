@@ -6,3 +6,4 @@ obj
 *.userprefs
 Staging/
 UpgradeLog*.htm
+Installer_NSIS/NBTExplorerJ_Install.exe

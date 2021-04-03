@@ -53,7 +53,7 @@
             this._buttonCancel.Name = "_buttonCancel";
             this._buttonCancel.Size = new System.Drawing.Size(75, 23);
             this._buttonCancel.TabIndex = 13;
-            this._buttonCancel.Text = "Cancel";
+            this._buttonCancel.Text = "キャンセル";
             this._buttonCancel.UseVisualStyleBackColor = true;
             // 
             // _buttonOK
@@ -73,7 +73,7 @@
             this._buttonImport.Name = "_buttonImport";
             this._buttonImport.Size = new System.Drawing.Size(75, 23);
             this._buttonImport.TabIndex = 14;
-            this._buttonImport.Text = "Import";
+            this._buttonImport.Text = "インポート";
             this._buttonImport.UseVisualStyleBackColor = true;
             this._buttonImport.Click += new System.EventHandler(this._buttonImport_Click);
             // 
@@ -83,7 +83,7 @@
             this._buttonExport.Name = "_buttonExport";
             this._buttonExport.Size = new System.Drawing.Size(75, 23);
             this._buttonExport.TabIndex = 15;
-            this._buttonExport.Text = "Export";
+            this._buttonExport.Text = "エクスポート";
             this._buttonExport.UseVisualStyleBackColor = true;
             this._buttonExport.Click += new System.EventHandler(this._buttonExport_Click);
             // 
@@ -110,7 +110,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "HexEditor";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "HexEditor";
+            this.Text = "十六進数エディタ";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.viewTabs.ResumeLayout(false);

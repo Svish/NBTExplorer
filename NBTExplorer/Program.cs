@@ -23,6 +23,15 @@ namespace NBTExplorer
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            MainForm mainForm = new MainForm();
+
+            //スプラッシュウィンドウを表示
+            /*SplashForm spform = new SplashForm();
+            spform.Show();
+            Thread.Sleep(5000);
+            spform.Close();
+            */
+
             Application.Run(new MainForm());
         }
 

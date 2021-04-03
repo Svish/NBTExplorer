@@ -128,7 +128,7 @@ namespace NBTExplorer.Windows
                     string path = (!Interop.IsWindows ? "file://" : "") + ddNode.NodeDirPath;
                     System.Diagnostics.Process.Start(path);
                 } catch (Win32Exception ex) {
-                    MessageBox.Show(ex.Message, "Can't open directory", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, "そのディレクトリは開けません!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -165,7 +165,7 @@ namespace NBTExplorer.Windows
             using (OpenFileDialog ofd = new OpenFileDialog() {
                 RestoreDirectory = true,
                 Multiselect = true,
-                Filter = "All Files|*|NBT Files (*.dat, *.schematic)|*.dat;*.nbt;*.schematic|Region Files (*.mca, *.mcr)|*.mca;*.mcr",
+                Filter = "すべてのファイル|*|NBT ファイル (*.dat, *.schematic)|*.dat;*.nbt;*.schematic|チャンクデータ ファイル (*.mca, *.mcr)|*.mca;*.mcr",
                 FilterIndex = 0,
             }) {
                 if (ofd.ShowDialog() == DialogResult.OK) {
@@ -185,8 +185,8 @@ namespace NBTExplorer.Windows
                 // If the user is holding Control, use a file open dialog and open whichever directory has the selected file.
                 // But not if the user is also holding Shift, as Ctrl+Shift+O is the keyboard shortcut for this menu item.
                 using (OpenFileDialog ofd = new OpenFileDialog()) {
-                    ofd.Title = "Select any file in the directory to open";
-                    ofd.Filter = "All files (*.*)|*.*";
+                    ofd.Title = "ファイルを開くのだ!";
+                    ofd.Filter = "すべてのファイル (*.*)|*.*";
 
                     if (_openFolderPath != null)
                         ofd.InitialDirectory = _openFolderPath;
@@ -317,7 +317,7 @@ namespace NBTExplorer.Windows
         private bool ConfirmExit ()
         {
             if (_controller.CheckModifications()) {
-                if (MessageBox.Show("You currently have unsaved changes.  Close anyway?", "Unsaved Changes", MessageBoxButtons.OKCancel) != DialogResult.OK)
+                if (MessageBox.Show("今開いてるファイルは保存されていないよ。 閉じてもいい?", "保存されていない!", MessageBoxButtons.OKCancel) != DialogResult.OK)
                     return false;
             }
 
@@ -327,7 +327,7 @@ namespace NBTExplorer.Windows
         private bool ConfirmAction (string actionMessage)
         {
             if (_controller.CheckModifications()) {
-                if (MessageBox.Show("You currently have unsaved changes.  " + actionMessage, "Unsaved Changes", MessageBoxButtons.OKCancel) != DialogResult.OK)
+                if (MessageBox.Show("You currently have unsaved changes.  " + actionMessage, "保存されてないぞ!", MessageBoxButtons.OKCancel) != DialogResult.OK)
                     return false;
             }
 
@@ -337,7 +337,7 @@ namespace NBTExplorer.Windows
         private void _controller_ConfirmAction (object sender, MessageBoxEventArgs e)
         {
             if (_controller.CheckModifications()) {
-                if (MessageBox.Show("You currently have unsaved changes.  " + e.Message, "Unsaved Changes", MessageBoxButtons.OKCancel) != DialogResult.OK)
+                if (MessageBox.Show("You currently have unsaved changes.  " + e.Message, "保存されてないぞ!", MessageBoxButtons.OKCancel) != DialogResult.OK)
                     e.Cancel = true;
             }
         }
@@ -901,12 +901,14 @@ namespace NBTExplorer.Windows
                     _controller.ScrollNode(form.Result);
                 }
                 else
-                    MessageBox.Show("Chunk not found.");
+                    MessageBox.Show("チャンクがないぞ!");
             }
         }
 
         #endregion
 
         #endregion
+
+
     }
 }

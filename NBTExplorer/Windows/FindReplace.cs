@@ -44,7 +44,7 @@ namespace NBTExplorer.Windows
                 _replaceController.EditSelection();
             };
 
-            _replaceController.VirtualRootDisplay = "Replacement Tags";
+            _replaceController.VirtualRootDisplay = "置き換え後のタグ";
 
             _explorerStrip.Renderer = new ToolStripExplorerRenderer();
             _explorerStrip.ImageList = _mainController.IconList;

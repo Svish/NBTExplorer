@@ -48,7 +48,7 @@
             this._buttonCancel.Name = "_buttonCancel";
             this._buttonCancel.Size = new System.Drawing.Size(75, 23);
             this._buttonCancel.TabIndex = 9;
-            this._buttonCancel.Text = "Cancel";
+            this._buttonCancel.Text = "キャンセル";
             this._buttonCancel.UseVisualStyleBackColor = true;
             // 
             // _buttonOK
@@ -77,7 +77,7 @@
             this.Name = "EditString";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Edit String...";
+            this.Text = "文字列の編集";
             this.ResumeLayout(false);
             this.PerformLayout();
 

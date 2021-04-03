@@ -75,11 +75,11 @@ namespace NBTExplorer.Windows
                 }
             }
             catch (FormatException) {
-                MessageBox.Show("The value is formatted incorrectly for the given type.");
+                MessageBox.Show("指定された値の型が合っていません。。");
                 return false;
             }
             catch (OverflowException) {
-                MessageBox.Show("The value is outside the acceptable range for the given type.");
+                MessageBox.Show("指定された値が大きすぎです。オーバーフローします。","エラー");
                 return false;
             }
             catch {

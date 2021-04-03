@@ -1,4 +1,4 @@
-Copyright (C) 2011 by Justin Aquadro
+Copyright (C) 2011 by Justin Aquadro  and 2021 by kokkiemouse
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

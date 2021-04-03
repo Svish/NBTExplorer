@@ -34,34 +34,34 @@
             // _buttonCancel
             // 
             this._buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this._buttonCancel.Location = new System.Drawing.Point(232, 45);
+            this._buttonCancel.Location = new System.Drawing.Point(232, 42);
             this._buttonCancel.Name = "_buttonCancel";
-            this._buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this._buttonCancel.Size = new System.Drawing.Size(75, 21);
             this._buttonCancel.TabIndex = 0;
-            this._buttonCancel.Text = "Cancel";
+            this._buttonCancel.Text = "キャンセル";
             this._buttonCancel.UseVisualStyleBackColor = true;
             // 
             // _searchPathLabel
             // 
-            this._searchPathLabel.Location = new System.Drawing.Point(12, 19);
+            this._searchPathLabel.Location = new System.Drawing.Point(12, 18);
             this._searchPathLabel.Name = "_searchPathLabel";
-            this._searchPathLabel.Size = new System.Drawing.Size(514, 23);
+            this._searchPathLabel.Size = new System.Drawing.Size(514, 21);
             this._searchPathLabel.TabIndex = 1;
             this._searchPathLabel.Text = "...";
             // 
             // CancelSearchForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this._buttonCancel;
-            this.ClientSize = new System.Drawing.Size(538, 84);
+            this.ClientSize = new System.Drawing.Size(538, 78);
             this.Controls.Add(this._searchPathLabel);
             this.Controls.Add(this._buttonCancel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CancelSearchForm";
-            this.Text = "Searching...";
+            this.Text = "検索中";
             this.ResumeLayout(false);
 
         }

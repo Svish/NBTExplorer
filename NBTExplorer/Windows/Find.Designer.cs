@@ -42,7 +42,7 @@
             this._cbName.Name = "_cbName";
             this._cbName.Size = new System.Drawing.Size(57, 17);
             this._cbName.TabIndex = 0;
-            this._cbName.Text = "Name:";
+            this._cbName.Text = "名前:";
             this._cbName.UseVisualStyleBackColor = true;
             // 
             // _cbValue
@@ -52,7 +52,7 @@
             this._cbValue.Name = "_cbValue";
             this._cbValue.Size = new System.Drawing.Size(56, 17);
             this._cbValue.TabIndex = 1;
-            this._cbValue.Text = "Value:";
+            this._cbValue.Text = "値:";
             this._cbValue.UseVisualStyleBackColor = true;
             // 
             // _textName
@@ -82,7 +82,7 @@
             this._buttonFind.Name = "_buttonFind";
             this._buttonFind.Size = new System.Drawing.Size(75, 23);
             this._buttonFind.TabIndex = 4;
-            this._buttonFind.Text = "Find";
+            this._buttonFind.Text = "検索";
             this._buttonFind.UseVisualStyleBackColor = true;
             this._buttonFind.Click += new System.EventHandler(this._buttonFind_Click);
             // 
@@ -94,7 +94,7 @@
             this._buttonCancel.Name = "_buttonCancel";
             this._buttonCancel.Size = new System.Drawing.Size(75, 23);
             this._buttonCancel.TabIndex = 5;
-            this._buttonCancel.Text = "Cancel";
+            this._buttonCancel.Text = "キャンセル";
             this._buttonCancel.UseVisualStyleBackColor = true;
             this._buttonCancel.Click += new System.EventHandler(this._buttonCancel_Click);
             // 
@@ -115,7 +115,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Find";
-            this.Text = "Find";
+            this.Text = "検索";
             this.ResumeLayout(false);
             this.PerformLayout();
 

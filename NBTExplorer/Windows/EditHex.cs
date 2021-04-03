@@ -531,7 +531,7 @@ namespace NBTExplorer.Windows
                 }
             }
             catch (Exception e) {
-                MessageBox.Show("Failed to export data to \"" + path + "\"\n\nException: " + e.Message);
+                MessageBox.Show("エクスポートに失敗しました。\"" + path + "\"\n\nException: " + e.Message);
             }
         }
 
@@ -561,7 +561,7 @@ namespace NBTExplorer.Windows
             using (OpenFileDialog ofd = new OpenFileDialog()) {
                 ofd.RestoreDirectory = true;
                 ofd.Multiselect = false;
-                ofd.Filter = "Binary Data|*|Text Data (*.txt)|*.txt";
+                ofd.Filter = "バイナリデータ|*|テキストデータ (*.txt)|*.txt";
                 ofd.FilterIndex = 0;
 
                 if (ofd.ShowDialog() == DialogResult.OK) {
@@ -577,7 +577,7 @@ namespace NBTExplorer.Windows
         {
             using (SaveFileDialog sfd = new SaveFileDialog()) {
                 sfd.RestoreDirectory = true;
-                sfd.Filter = "Binary Data|*|Text Data (*.txt)|*.txt";
+                sfd.Filter = "バイナリデータ|*|テキストデータ(*.txt)|*.txt";
                 sfd.FilterIndex = 0;
                 sfd.OverwritePrompt = true;
 

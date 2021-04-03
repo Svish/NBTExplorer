@@ -37,65 +37,65 @@
             // 
             // _sizeField
             // 
-            this._sizeField.Location = new System.Drawing.Point(56, 26);
+            this._sizeField.Location = new System.Drawing.Point(56, 24);
             this._sizeField.Name = "_sizeField";
-            this._sizeField.Size = new System.Drawing.Size(67, 20);
+            this._sizeField.Size = new System.Drawing.Size(67, 19);
             this._sizeField.TabIndex = 7;
             // 
             // _sizeFieldLabel
             // 
             this._sizeFieldLabel.AutoSize = true;
-            this._sizeFieldLabel.Location = new System.Drawing.Point(12, 29);
+            this._sizeFieldLabel.Location = new System.Drawing.Point(12, 27);
             this._sizeFieldLabel.Name = "_sizeFieldLabel";
-            this._sizeFieldLabel.Size = new System.Drawing.Size(30, 13);
+            this._sizeFieldLabel.Size = new System.Drawing.Size(36, 12);
             this._sizeFieldLabel.TabIndex = 6;
-            this._sizeFieldLabel.Text = "Size:";
+            this._sizeFieldLabel.Text = "サイズ:";
             // 
             // _nameFieldLabel
             // 
             this._nameFieldLabel.AutoSize = true;
-            this._nameFieldLabel.Location = new System.Drawing.Point(12, 9);
+            this._nameFieldLabel.Location = new System.Drawing.Point(12, 8);
             this._nameFieldLabel.Name = "_nameFieldLabel";
-            this._nameFieldLabel.Size = new System.Drawing.Size(38, 13);
+            this._nameFieldLabel.Size = new System.Drawing.Size(31, 12);
             this._nameFieldLabel.TabIndex = 5;
-            this._nameFieldLabel.Text = "Name:";
+            this._nameFieldLabel.Text = "名前:";
             // 
             // _nameField
             // 
             this._nameField.Location = new System.Drawing.Point(56, 6);
             this._nameField.Name = "_nameField";
-            this._nameField.Size = new System.Drawing.Size(209, 20);
+            this._nameField.Size = new System.Drawing.Size(209, 19);
             this._nameField.TabIndex = 4;
             // 
             // _buttonCancel
             // 
             this._buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this._buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this._buttonCancel.Location = new System.Drawing.Point(109, 57);
+            this._buttonCancel.Location = new System.Drawing.Point(109, 53);
             this._buttonCancel.Name = "_buttonCancel";
-            this._buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this._buttonCancel.Size = new System.Drawing.Size(75, 21);
             this._buttonCancel.TabIndex = 9;
-            this._buttonCancel.Text = "Cancel";
+            this._buttonCancel.Text = "キャンセル";
             this._buttonCancel.UseVisualStyleBackColor = true;
             // 
             // _buttonOK
             // 
             this._buttonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this._buttonOK.Location = new System.Drawing.Point(190, 57);
+            this._buttonOK.Location = new System.Drawing.Point(190, 53);
             this._buttonOK.Name = "_buttonOK";
-            this._buttonOK.Size = new System.Drawing.Size(75, 23);
+            this._buttonOK.Size = new System.Drawing.Size(75, 21);
             this._buttonOK.TabIndex = 8;
             this._buttonOK.Text = "OK";
             this._buttonOK.UseVisualStyleBackColor = true;
             this._buttonOK.Click += new System.EventHandler(this._buttonOK_Click);
             // 
-            // CreateNode
+            // CreateNodeForm
             // 
             this.AcceptButton = this._buttonOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this._buttonCancel;
-            this.ClientSize = new System.Drawing.Size(277, 92);
+            this.ClientSize = new System.Drawing.Size(277, 85);
             this.Controls.Add(this._buttonCancel);
             this.Controls.Add(this._buttonOK);
             this.Controls.Add(this._sizeField);
@@ -105,10 +105,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "CreateNode";
+            this.Name = "CreateNodeForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Create Tag...";
+            this.Text = "タグの作成";
             this.ResumeLayout(false);
             this.PerformLayout();
 

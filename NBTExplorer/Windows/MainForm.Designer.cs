@@ -87,6 +87,7 @@
             this._buttonAddTagDouble = new System.Windows.Forms.ToolStripButton();
             this._buttonAddTagByteArray = new System.Windows.Forms.ToolStripButton();
             this._buttonAddTagIntArray = new System.Windows.Forms.ToolStripButton();
+            this._buttonAddTagLongArray = new System.Windows.Forms.ToolStripButton();
             this._buttonAddTagString = new System.Windows.Forms.ToolStripButton();
             this._buttonAddTagList = new System.Windows.Forms.ToolStripButton();
             this._buttonAddTagCompound = new System.Windows.Forms.ToolStripButton();
@@ -100,7 +101,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._nodeTree = new NBTExplorer.Vendor.MultiSelectTreeView.MultiSelectTreeView();
-            this._buttonAddTagLongArray = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -136,16 +136,16 @@
             this.toolStripSeparator8,
             this._menuItemExit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.fileToolStripMenuItem.Text = "ファイル(&F)";
             // 
             // _menuItemOpen
             // 
             this._menuItemOpen.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemOpen.Image")));
             this._menuItemOpen.Name = "_menuItemOpen";
             this._menuItemOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this._menuItemOpen.Size = new System.Drawing.Size(233, 22);
-            this._menuItemOpen.Text = "&Open...";
+            this._menuItemOpen.Size = new System.Drawing.Size(249, 22);
+            this._menuItemOpen.Text = "開く(&O)";
             // 
             // _menuItemOpenFolder
             // 
@@ -153,19 +153,19 @@
             this._menuItemOpenFolder.Name = "_menuItemOpenFolder";
             this._menuItemOpenFolder.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.O)));
-            this._menuItemOpenFolder.Size = new System.Drawing.Size(233, 22);
-            this._menuItemOpenFolder.Text = "Open &Folder...";
+            this._menuItemOpenFolder.Size = new System.Drawing.Size(249, 22);
+            this._menuItemOpenFolder.Text = "フォルダを開く(&F)";
             // 
             // _menuItemOpenMinecraftSaveFolder
             // 
             this._menuItemOpenMinecraftSaveFolder.Name = "_menuItemOpenMinecraftSaveFolder";
-            this._menuItemOpenMinecraftSaveFolder.Size = new System.Drawing.Size(233, 22);
-            this._menuItemOpenMinecraftSaveFolder.Text = "Open &Minecraft Save Folder";
+            this._menuItemOpenMinecraftSaveFolder.Size = new System.Drawing.Size(249, 22);
+            this._menuItemOpenMinecraftSaveFolder.Text = "マイクラのセーブデータのフォルダを開く";
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(230, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(246, 6);
             // 
             // _menuItemOpenInExplorer
             // 
@@ -173,60 +173,60 @@
             this._menuItemOpenInExplorer.Name = "_menuItemOpenInExplorer";
             this._menuItemOpenInExplorer.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.E)));
-            this._menuItemOpenInExplorer.Size = new System.Drawing.Size(233, 22);
-            this._menuItemOpenInExplorer.Text = "Open in &Explorer";
+            this._menuItemOpenInExplorer.Size = new System.Drawing.Size(249, 22);
+            this._menuItemOpenInExplorer.Text = "エクスプローラで開く(&F)";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(230, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(246, 6);
             // 
             // _menuItemSave
             // 
             this._menuItemSave.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemSave.Image")));
             this._menuItemSave.Name = "_menuItemSave";
             this._menuItemSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this._menuItemSave.Size = new System.Drawing.Size(233, 22);
-            this._menuItemSave.Text = "&Save";
+            this._menuItemSave.Size = new System.Drawing.Size(249, 22);
+            this._menuItemSave.Text = "保存(&S)";
             // 
             // _menuItemRefresh
             // 
             this._menuItemRefresh.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemRefresh.Image")));
             this._menuItemRefresh.Name = "_menuItemRefresh";
             this._menuItemRefresh.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this._menuItemRefresh.Size = new System.Drawing.Size(233, 22);
-            this._menuItemRefresh.Text = "Refresh";
+            this._menuItemRefresh.Size = new System.Drawing.Size(249, 22);
+            this._menuItemRefresh.Text = "開きなおす";
             this._menuItemRefresh.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(230, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(246, 6);
             // 
             // _menuItemRecentFiles
             // 
             this._menuItemRecentFiles.Name = "_menuItemRecentFiles";
-            this._menuItemRecentFiles.Size = new System.Drawing.Size(233, 22);
-            this._menuItemRecentFiles.Text = "Recent Files";
+            this._menuItemRecentFiles.Size = new System.Drawing.Size(249, 22);
+            this._menuItemRecentFiles.Text = "履歴";
             // 
             // _menuItemRecentFolders
             // 
             this._menuItemRecentFolders.Name = "_menuItemRecentFolders";
-            this._menuItemRecentFolders.Size = new System.Drawing.Size(233, 22);
-            this._menuItemRecentFolders.Text = "Recent Folders";
+            this._menuItemRecentFolders.Size = new System.Drawing.Size(249, 22);
+            this._menuItemRecentFolders.Text = "フォルダの履歴";
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(230, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(246, 6);
             // 
             // _menuItemExit
             // 
             this._menuItemExit.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemExit.Image")));
             this._menuItemExit.Name = "_menuItemExit";
             this._menuItemExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this._menuItemExit.Size = new System.Drawing.Size(233, 22);
-            this._menuItemExit.Text = "E&xit";
+            this._menuItemExit.Size = new System.Drawing.Size(249, 22);
+            this._menuItemExit.Text = "終了(&X)";
             // 
             // editToolStripMenuItem
             // 
@@ -243,74 +243,74 @@
             this._menuItemMoveDown});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Up)));
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "&Edit";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.editToolStripMenuItem.Text = "編集(&E)";
             // 
             // _menuItemCut
             // 
             this._menuItemCut.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemCut.Image")));
             this._menuItemCut.Name = "_menuItemCut";
             this._menuItemCut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this._menuItemCut.Size = new System.Drawing.Size(203, 22);
-            this._menuItemCut.Text = "Cu&t";
+            this._menuItemCut.Size = new System.Drawing.Size(200, 22);
+            this._menuItemCut.Text = "切り取り(&t)";
             // 
             // _menuItemCopy
             // 
             this._menuItemCopy.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemCopy.Image")));
             this._menuItemCopy.Name = "_menuItemCopy";
             this._menuItemCopy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this._menuItemCopy.Size = new System.Drawing.Size(203, 22);
-            this._menuItemCopy.Text = "&Copy";
+            this._menuItemCopy.Size = new System.Drawing.Size(200, 22);
+            this._menuItemCopy.Text = "コピー(&C)";
             // 
             // _menuItemPaste
             // 
             this._menuItemPaste.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemPaste.Image")));
             this._menuItemPaste.Name = "_menuItemPaste";
             this._menuItemPaste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this._menuItemPaste.Size = new System.Drawing.Size(203, 22);
-            this._menuItemPaste.Text = "&Paste";
+            this._menuItemPaste.Size = new System.Drawing.Size(200, 22);
+            this._menuItemPaste.Text = "貼り付け(&P)";
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(197, 6);
             // 
             // _menuItemRename
             // 
             this._menuItemRename.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemRename.Image")));
             this._menuItemRename.Name = "_menuItemRename";
             this._menuItemRename.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this._menuItemRename.Size = new System.Drawing.Size(203, 22);
-            this._menuItemRename.Text = "&Rename";
+            this._menuItemRename.Size = new System.Drawing.Size(200, 22);
+            this._menuItemRename.Text = "名前の変更(&R)";
             // 
             // _menuItemEditValue
             // 
             this._menuItemEditValue.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemEditValue.Image")));
             this._menuItemEditValue.Name = "_menuItemEditValue";
             this._menuItemEditValue.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this._menuItemEditValue.Size = new System.Drawing.Size(203, 22);
-            this._menuItemEditValue.Text = "&Edit Value";
+            this._menuItemEditValue.Size = new System.Drawing.Size(200, 22);
+            this._menuItemEditValue.Text = "値を編集(&E)";
             // 
             // _menuItemDelete
             // 
             this._menuItemDelete.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemDelete.Image")));
             this._menuItemDelete.Name = "_menuItemDelete";
             this._menuItemDelete.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this._menuItemDelete.Size = new System.Drawing.Size(203, 22);
-            this._menuItemDelete.Text = "&Delete";
+            this._menuItemDelete.Size = new System.Drawing.Size(200, 22);
+            this._menuItemDelete.Text = "消去(&D)";
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(197, 6);
             // 
             // _menuItemMoveUp
             // 
             this._menuItemMoveUp.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemMoveUp.Image")));
             this._menuItemMoveUp.Name = "_menuItemMoveUp";
             this._menuItemMoveUp.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Up)));
-            this._menuItemMoveUp.Size = new System.Drawing.Size(203, 22);
-            this._menuItemMoveUp.Text = "Move &Up";
+            this._menuItemMoveUp.Size = new System.Drawing.Size(200, 22);
+            this._menuItemMoveUp.Text = "上に移動(&U)";
             this._menuItemMoveUp.Click += new System.EventHandler(this._menuItemMoveUp_Click);
             // 
             // _menuItemMoveDown
@@ -318,8 +318,8 @@
             this._menuItemMoveDown.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemMoveDown.Image")));
             this._menuItemMoveDown.Name = "_menuItemMoveDown";
             this._menuItemMoveDown.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Down)));
-            this._menuItemMoveDown.Size = new System.Drawing.Size(203, 22);
-            this._menuItemMoveDown.Text = "Move Do&wn";
+            this._menuItemMoveDown.Size = new System.Drawing.Size(200, 22);
+            this._menuItemMoveDown.Text = "下に移動(&w)";
             this._menuItemMoveDown.Click += new System.EventHandler(this._menuItemMoveDown_Click);
             // 
             // searchToolStripMenuItem
@@ -332,48 +332,48 @@
             this.toolStripSeparator11,
             this.findBlockToolStripMenuItem});
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.searchToolStripMenuItem.Text = "&Search";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.searchToolStripMenuItem.Text = "検索(&S)";
             // 
             // _menuItemFind
             // 
             this._menuItemFind.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemFind.Image")));
             this._menuItemFind.Name = "_menuItemFind";
             this._menuItemFind.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this._menuItemFind.Size = new System.Drawing.Size(167, 22);
-            this._menuItemFind.Text = "&Find...";
+            this._menuItemFind.Size = new System.Drawing.Size(174, 22);
+            this._menuItemFind.Text = "検索(&F)";
             // 
             // _menuItemFindNext
             // 
             this._menuItemFindNext.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemFindNext.Image")));
             this._menuItemFindNext.Name = "_menuItemFindNext";
             this._menuItemFindNext.ShortcutKeys = System.Windows.Forms.Keys.F3;
-            this._menuItemFindNext.Size = new System.Drawing.Size(167, 22);
-            this._menuItemFindNext.Text = "Find &Next";
+            this._menuItemFindNext.Size = new System.Drawing.Size(174, 22);
+            this._menuItemFindNext.Text = "次を検索(&N)";
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(164, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(171, 6);
             // 
             // replaceToolStripMenuItem
             // 
             this.replaceToolStripMenuItem.Name = "replaceToolStripMenuItem";
             this.replaceToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.replaceToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.replaceToolStripMenuItem.Text = "&Replace...";
+            this.replaceToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.replaceToolStripMenuItem.Text = "置き換え(&R)";
             this.replaceToolStripMenuItem.Click += new System.EventHandler(this.replaceToolStripMenuItem_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(164, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(171, 6);
             // 
             // findBlockToolStripMenuItem
             // 
             this.findBlockToolStripMenuItem.Name = "findBlockToolStripMenuItem";
-            this.findBlockToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.findBlockToolStripMenuItem.Text = "&Chunk Finder...";
+            this.findBlockToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.findBlockToolStripMenuItem.Text = "チャンクファインダー(&C)";
             this.findBlockToolStripMenuItem.Click += new System.EventHandler(this.findBlockToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
@@ -381,16 +381,16 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._menuItemAbout});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.helpToolStripMenuItem.Text = "ヘルプ(&H)";
             // 
             // _menuItemAbout
             // 
             this._menuItemAbout.Image = ((System.Drawing.Image)(resources.GetObject("_menuItemAbout.Image")));
             this._menuItemAbout.Name = "_menuItemAbout";
             this._menuItemAbout.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this._menuItemAbout.Size = new System.Drawing.Size(126, 22);
-            this._menuItemAbout.Text = "&About";
+            this._menuItemAbout.Size = new System.Drawing.Size(211, 22);
+            this._menuItemAbout.Text = "NBTExplorerについて(&A)";
             // 
             // imageList1
             // 
@@ -458,7 +458,7 @@
             this._buttonOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonOpen.Name = "_buttonOpen";
             this._buttonOpen.Size = new System.Drawing.Size(23, 22);
-            this._buttonOpen.Text = "Open NBT Data Source";
+            this._buttonOpen.Text = "NBT形式のファイルを開く";
             // 
             // _buttonOpenFolder
             // 
@@ -467,7 +467,7 @@
             this._buttonOpenFolder.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonOpenFolder.Name = "_buttonOpenFolder";
             this._buttonOpenFolder.Size = new System.Drawing.Size(23, 22);
-            this._buttonOpenFolder.Text = "Open Folder";
+            this._buttonOpenFolder.Text = "フォルダを開く";
             // 
             // _buttonSave
             // 
@@ -476,7 +476,7 @@
             this._buttonSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonSave.Name = "_buttonSave";
             this._buttonSave.Size = new System.Drawing.Size(23, 22);
-            this._buttonSave.Text = "Save All Modified Tags";
+            this._buttonSave.Text = "すべてのタグを保存";
             // 
             // _buttonRefresh
             // 
@@ -485,7 +485,7 @@
             this._buttonRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonRefresh.Name = "_buttonRefresh";
             this._buttonRefresh.Size = new System.Drawing.Size(23, 22);
-            this._buttonRefresh.Text = "Refresh Content From Disk";
+            this._buttonRefresh.Text = "再読み込み";
             this._buttonRefresh.Click += new System.EventHandler(this._buttonRefresh_Click);
             // 
             // toolStripSeparator1
@@ -500,7 +500,7 @@
             this._buttonCut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonCut.Name = "_buttonCut";
             this._buttonCut.Size = new System.Drawing.Size(23, 22);
-            this._buttonCut.Text = "Cut";
+            this._buttonCut.Text = "切り取り";
             // 
             // _buttonCopy
             // 
@@ -509,7 +509,7 @@
             this._buttonCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonCopy.Name = "_buttonCopy";
             this._buttonCopy.Size = new System.Drawing.Size(23, 22);
-            this._buttonCopy.Text = "Copy";
+            this._buttonCopy.Text = "コピー";
             // 
             // _buttonPaste
             // 
@@ -518,7 +518,7 @@
             this._buttonPaste.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonPaste.Name = "_buttonPaste";
             this._buttonPaste.Size = new System.Drawing.Size(23, 22);
-            this._buttonPaste.Text = "Paste";
+            this._buttonPaste.Text = "貼り付け";
             // 
             // toolStripSeparator6
             // 
@@ -532,7 +532,7 @@
             this._buttonRename.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonRename.Name = "_buttonRename";
             this._buttonRename.Size = new System.Drawing.Size(23, 22);
-            this._buttonRename.Text = "Rename Tag";
+            this._buttonRename.Text = "タグの名前を変更";
             // 
             // _buttonEdit
             // 
@@ -541,7 +541,7 @@
             this._buttonEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonEdit.Name = "_buttonEdit";
             this._buttonEdit.Size = new System.Drawing.Size(23, 22);
-            this._buttonEdit.Text = "Edit Tag Value";
+            this._buttonEdit.Text = "タグの値を編集";
             // 
             // _buttonDelete
             // 
@@ -550,7 +550,7 @@
             this._buttonDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonDelete.Name = "_buttonDelete";
             this._buttonDelete.Size = new System.Drawing.Size(23, 22);
-            this._buttonDelete.Text = "Delete Tag";
+            this._buttonDelete.Text = "タグを消去";
             // 
             // toolStripSeparator2
             // 
@@ -564,7 +564,7 @@
             this._buttonAddTagByte.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonAddTagByte.Name = "_buttonAddTagByte";
             this._buttonAddTagByte.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagByte.Text = "Add Byte Tag";
+            this._buttonAddTagByte.Text = "Byte型のタグを追加";
             // 
             // _buttonAddTagShort
             // 
@@ -573,7 +573,7 @@
             this._buttonAddTagShort.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonAddTagShort.Name = "_buttonAddTagShort";
             this._buttonAddTagShort.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagShort.Text = "Add Short Tag";
+            this._buttonAddTagShort.Text = "Short型のタグを追加";
             // 
             // _buttonAddTagInt
             // 
@@ -582,7 +582,7 @@
             this._buttonAddTagInt.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonAddTagInt.Name = "_buttonAddTagInt";
             this._buttonAddTagInt.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagInt.Text = "Add Int Tag";
+            this._buttonAddTagInt.Text = "Int型のタグを追加";
             // 
             // _buttonAddTagLong
             // 
@@ -591,7 +591,7 @@
             this._buttonAddTagLong.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonAddTagLong.Name = "_buttonAddTagLong";
             this._buttonAddTagLong.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagLong.Text = "Add Long Tag";
+            this._buttonAddTagLong.Text = "Long型のタグを追加";
             // 
             // _buttonAddTagFloat
             // 
@@ -600,7 +600,7 @@
             this._buttonAddTagFloat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonAddTagFloat.Name = "_buttonAddTagFloat";
             this._buttonAddTagFloat.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagFloat.Text = "Add Float Tag";
+            this._buttonAddTagFloat.Text = "Float型のタグを追加";
             // 
             // _buttonAddTagDouble
             // 
@@ -609,7 +609,7 @@
             this._buttonAddTagDouble.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonAddTagDouble.Name = "_buttonAddTagDouble";
             this._buttonAddTagDouble.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagDouble.Text = "Add Double Tag";
+            this._buttonAddTagDouble.Text = "Double型のタグを追加";
             // 
             // _buttonAddTagByteArray
             // 
@@ -618,7 +618,7 @@
             this._buttonAddTagByteArray.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonAddTagByteArray.Name = "_buttonAddTagByteArray";
             this._buttonAddTagByteArray.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagByteArray.Text = "Add Byte Array Tag";
+            this._buttonAddTagByteArray.Text = "Byte型の配列タグを追加";
             // 
             // _buttonAddTagIntArray
             // 
@@ -628,7 +628,17 @@
             this._buttonAddTagIntArray.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonAddTagIntArray.Name = "_buttonAddTagIntArray";
             this._buttonAddTagIntArray.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagIntArray.Text = "Add Int Array Tag";
+            this._buttonAddTagIntArray.Text = "Int型の配列を追加";
+            // 
+            // _buttonAddTagLongArray
+            // 
+            this._buttonAddTagLongArray.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this._buttonAddTagLongArray.Image = ((System.Drawing.Image)(resources.GetObject("_buttonAddTagLongArray.Image")));
+            this._buttonAddTagLongArray.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this._buttonAddTagLongArray.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this._buttonAddTagLongArray.Name = "_buttonAddTagLongArray";
+            this._buttonAddTagLongArray.Size = new System.Drawing.Size(23, 22);
+            this._buttonAddTagLongArray.Text = "Long型の配列を追加";
             // 
             // _buttonAddTagString
             // 
@@ -637,7 +647,7 @@
             this._buttonAddTagString.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonAddTagString.Name = "_buttonAddTagString";
             this._buttonAddTagString.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagString.Text = "Add String Tag";
+            this._buttonAddTagString.Text = "String型のタグを追加";
             // 
             // _buttonAddTagList
             // 
@@ -646,7 +656,7 @@
             this._buttonAddTagList.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonAddTagList.Name = "_buttonAddTagList";
             this._buttonAddTagList.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagList.Text = "Add List Tag";
+            this._buttonAddTagList.Text = "List型のタグを追加";
             // 
             // _buttonAddTagCompound
             // 
@@ -655,7 +665,7 @@
             this._buttonAddTagCompound.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonAddTagCompound.Name = "_buttonAddTagCompound";
             this._buttonAddTagCompound.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagCompound.Text = "Add Compound Tag";
+            this._buttonAddTagCompound.Text = "ツリー内のフォルダを追加";
             // 
             // toolStripSeparator5
             // 
@@ -669,7 +679,7 @@
             this._buttonFindNext.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._buttonFindNext.Name = "_buttonFindNext";
             this._buttonFindNext.Size = new System.Drawing.Size(23, 22);
-            this._buttonFindNext.Text = "Find / Find Next";
+            this._buttonFindNext.Text = "検索 / 次を検索";
             // 
             // BottomToolStripPanel
             // 
@@ -712,12 +722,12 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.testToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(96, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 26);
             // 
             // testToolStripMenuItem
             // 
             this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-            this.testToolStripMenuItem.Size = new System.Drawing.Size(95, 22);
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
             this.testToolStripMenuItem.Text = "Test";
             // 
             // _nodeTree
@@ -729,37 +739,27 @@
             this._nodeTree.ImageIndex = 0;
             this._nodeTree.ImageList = this.imageList1;
             this._nodeTree.ItemHeight = 18;
-            this._nodeTree.Location = new System.Drawing.Point(0, 49);
+            this._nodeTree.Location = new System.Drawing.Point(0, 45);
             this._nodeTree.Margin = new System.Windows.Forms.Padding(0);
             this._nodeTree.Name = "_nodeTree";
             this._nodeTree.SelectedImageIndex = 0;
             this._nodeTree.SelectedNodes = ((System.Collections.Generic.List<System.Windows.Forms.TreeNode>)(resources.GetObject("_nodeTree.SelectedNodes")));
-            this._nodeTree.Size = new System.Drawing.Size(619, 374);
+            this._nodeTree.Size = new System.Drawing.Size(619, 346);
             this._nodeTree.TabIndex = 0;
-            // 
-            // _buttonAddTagLongArray
-            // 
-            this._buttonAddTagLongArray.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this._buttonAddTagLongArray.Image = ((System.Drawing.Image)(resources.GetObject("_buttonAddTagLongArray.Image")));
-            this._buttonAddTagLongArray.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this._buttonAddTagLongArray.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this._buttonAddTagLongArray.Name = "_buttonAddTagLongArray";
-            this._buttonAddTagLongArray.Size = new System.Drawing.Size(23, 22);
-            this._buttonAddTagLongArray.Text = "Add Long Array Tag";
             // 
             // MainForm
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 423);
+            this.ClientSize = new System.Drawing.Size(619, 390);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this._nodeTree);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "NBTExplorer";
+            this.Text = "NBTExplorer 日本語版";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);

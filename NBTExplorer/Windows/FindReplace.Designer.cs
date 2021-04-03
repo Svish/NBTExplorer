@@ -91,10 +91,10 @@
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(341, 211);
+            this.groupBox1.Size = new System.Drawing.Size(341, 194);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Find";
+            this.groupBox1.Text = "検索";
             // 
             // panel1
             // 
@@ -103,9 +103,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.treeView1);
             this.panel1.Controls.Add(this.toolStrip1);
-            this.panel1.Location = new System.Drawing.Point(6, 19);
+            this.panel1.Location = new System.Drawing.Point(6, 18);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(329, 186);
+            this.panel1.Size = new System.Drawing.Size(310, 171);
             this.panel1.TabIndex = 0;
             // 
             // treeView1
@@ -119,7 +119,7 @@
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.ShowPlusMinus = false;
             this.treeView1.ShowRootLines = false;
-            this.treeView1.Size = new System.Drawing.Size(329, 161);
+            this.treeView1.Size = new System.Drawing.Size(310, 146);
             this.treeView1.TabIndex = 1;
             // 
             // imageList1
@@ -169,7 +169,7 @@
             this._tbFindString});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(329, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(310, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -180,7 +180,7 @@
             this._tbFindEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbFindEdit.Name = "_tbFindEdit";
             this._tbFindEdit.Size = new System.Drawing.Size(23, 22);
-            this._tbFindEdit.Text = "Edit Selected Rule";
+            this._tbFindEdit.Text = "選択しているルールの編集";
             this._tbFindEdit.Click += new System.EventHandler(this._tbFindEdit_Click);
             // 
             // _tbFindDelete
@@ -190,7 +190,7 @@
             this._tbFindDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbFindDelete.Name = "_tbFindDelete";
             this._tbFindDelete.Size = new System.Drawing.Size(23, 22);
-            this._tbFindDelete.Text = "Delete Selected Rule";
+            this._tbFindDelete.Text = "選択したルールを削除";
             this._tbFindDelete.Click += new System.EventHandler(this._tbFindDelete_Click);
             // 
             // toolStripSeparator1
@@ -240,7 +240,7 @@
             this._tbFindByte.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbFindByte.Name = "_tbFindByte";
             this._tbFindByte.Size = new System.Drawing.Size(23, 22);
-            this._tbFindByte.Text = "Add Byte Tag Rule";
+            this._tbFindByte.Text = "Byteタグルールを追加";
             this._tbFindByte.Click += new System.EventHandler(this._tbFindByte_Click);
             // 
             // _tbFindShort
@@ -250,7 +250,7 @@
             this._tbFindShort.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbFindShort.Name = "_tbFindShort";
             this._tbFindShort.Size = new System.Drawing.Size(23, 22);
-            this._tbFindShort.Text = "Add Short Tag Rule";
+            this._tbFindShort.Text = "Shortタグルールを追加";
             this._tbFindShort.Click += new System.EventHandler(this._tbFindShort_Click);
             // 
             // _tbFindInt
@@ -260,7 +260,7 @@
             this._tbFindInt.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbFindInt.Name = "_tbFindInt";
             this._tbFindInt.Size = new System.Drawing.Size(23, 22);
-            this._tbFindInt.Text = "Add Int Tag Rule";
+            this._tbFindInt.Text = "Intタグルールを追加";
             this._tbFindInt.Click += new System.EventHandler(this._tbFindInt_Click);
             // 
             // _tbFindLong
@@ -270,7 +270,7 @@
             this._tbFindLong.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbFindLong.Name = "_tbFindLong";
             this._tbFindLong.Size = new System.Drawing.Size(23, 22);
-            this._tbFindLong.Text = "Add Long Tag Rule";
+            this._tbFindLong.Text = "Longタグルールを追加";
             this._tbFindLong.Click += new System.EventHandler(this._tbFindLong_Click);
             // 
             // _tbFindFloat
@@ -280,7 +280,7 @@
             this._tbFindFloat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbFindFloat.Name = "_tbFindFloat";
             this._tbFindFloat.Size = new System.Drawing.Size(23, 22);
-            this._tbFindFloat.Text = "Add Float Tag Rule";
+            this._tbFindFloat.Text = "Floatタグルールを追加";
             this._tbFindFloat.Click += new System.EventHandler(this._tbFindFloat_Click);
             // 
             // _tbFindDouble
@@ -290,7 +290,7 @@
             this._tbFindDouble.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbFindDouble.Name = "_tbFindDouble";
             this._tbFindDouble.Size = new System.Drawing.Size(23, 22);
-            this._tbFindDouble.Text = "Add Double Tag Rule";
+            this._tbFindDouble.Text = "Doubleタグルールを追加";
             this._tbFindDouble.Click += new System.EventHandler(this._tbFindDouble_Click);
             // 
             // _tbFindString
@@ -300,7 +300,7 @@
             this._tbFindString.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbFindString.Name = "_tbFindString";
             this._tbFindString.Size = new System.Drawing.Size(23, 22);
-            this._tbFindString.Text = "Add Text Tag Rule";
+            this._tbFindString.Text = "テキストタグルールを追加";
             this._tbFindString.Click += new System.EventHandler(this._tbFindString_Click);
             // 
             // groupBox2
@@ -312,18 +312,18 @@
             this.groupBox2.Controls.Add(this.panel2);
             this.groupBox2.Location = new System.Drawing.Point(350, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(341, 211);
+            this.groupBox2.Size = new System.Drawing.Size(341, 194);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Replace";
+            this.groupBox2.Text = "置き換え";
             // 
             // _deleteTagsCheckbox
             // 
             this._deleteTagsCheckbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this._deleteTagsCheckbox.AutoSize = true;
-            this._deleteTagsCheckbox.Location = new System.Drawing.Point(6, 188);
+            this._deleteTagsCheckbox.Location = new System.Drawing.Point(6, 172);
             this._deleteTagsCheckbox.Name = "_deleteTagsCheckbox";
-            this._deleteTagsCheckbox.Size = new System.Drawing.Size(268, 17);
+            this._deleteTagsCheckbox.Size = new System.Drawing.Size(286, 16);
             this._deleteTagsCheckbox.TabIndex = 1;
             this._deleteTagsCheckbox.Text = "Delete matched tags before applying replacements.";
             this._deleteTagsCheckbox.UseVisualStyleBackColor = true;
@@ -335,9 +335,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.treeView2);
             this.panel2.Controls.Add(this.toolStrip2);
-            this.panel2.Location = new System.Drawing.Point(6, 19);
+            this.panel2.Location = new System.Drawing.Point(6, 18);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(329, 163);
+            this.panel2.Size = new System.Drawing.Size(309, 149);
             this.panel2.TabIndex = 0;
             // 
             // treeView2
@@ -351,7 +351,7 @@
             this.treeView2.SelectedImageIndex = 0;
             this.treeView2.ShowPlusMinus = false;
             this.treeView2.ShowRootLines = false;
-            this.treeView2.Size = new System.Drawing.Size(329, 138);
+            this.treeView2.Size = new System.Drawing.Size(309, 124);
             this.treeView2.TabIndex = 1;
             // 
             // toolStrip2
@@ -375,7 +375,7 @@
             this._tbReplaceCompound});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(329, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(309, 25);
             this.toolStrip2.TabIndex = 0;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -386,7 +386,7 @@
             this._tbReplaceEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceEdit.Name = "_tbReplaceEdit";
             this._tbReplaceEdit.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceEdit.Text = "Edit Selected Tag";
+            this._tbReplaceEdit.Text = "選択したタグを編集";
             this._tbReplaceEdit.Click += new System.EventHandler(this._tbReplaceEdit_Click);
             // 
             // _tbReplaceDelete
@@ -396,7 +396,7 @@
             this._tbReplaceDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceDelete.Name = "_tbReplaceDelete";
             this._tbReplaceDelete.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceDelete.Text = "Delete Selected Tag";
+            this._tbReplaceDelete.Text = "選択したタグを削除";
             this._tbReplaceDelete.Click += new System.EventHandler(this._tbReplaceDelete_Click);
             // 
             // toolStripSeparator2
@@ -411,7 +411,7 @@
             this._tbReplaceByte.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceByte.Name = "_tbReplaceByte";
             this._tbReplaceByte.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceByte.Text = "Add Byte Tag";
+            this._tbReplaceByte.Text = "Byteタグを追加";
             this._tbReplaceByte.Click += new System.EventHandler(this._tbReplaceByte_Click);
             // 
             // _tbReplaceShort
@@ -421,7 +421,7 @@
             this._tbReplaceShort.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceShort.Name = "_tbReplaceShort";
             this._tbReplaceShort.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceShort.Text = "Add Short Tag";
+            this._tbReplaceShort.Text = "Shortタグを追加";
             this._tbReplaceShort.Click += new System.EventHandler(this._tbReplaceShort_Click);
             // 
             // _tbReplaceInt
@@ -431,7 +431,7 @@
             this._tbReplaceInt.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceInt.Name = "_tbReplaceInt";
             this._tbReplaceInt.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceInt.Text = "Add Int Tag";
+            this._tbReplaceInt.Text = "Intタグを追加";
             this._tbReplaceInt.Click += new System.EventHandler(this._tbReplaceInt_Click);
             // 
             // _tbReplaceLong
@@ -441,7 +441,7 @@
             this._tbReplaceLong.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceLong.Name = "_tbReplaceLong";
             this._tbReplaceLong.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceLong.Text = "Add Long Tag";
+            this._tbReplaceLong.Text = "Longタグを追加";
             this._tbReplaceLong.Click += new System.EventHandler(this._tbReplaceLong_Click);
             // 
             // _tbReplaceFloat
@@ -451,7 +451,7 @@
             this._tbReplaceFloat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceFloat.Name = "_tbReplaceFloat";
             this._tbReplaceFloat.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceFloat.Text = "Add Float Tag";
+            this._tbReplaceFloat.Text = "Floatタグを追加";
             this._tbReplaceFloat.Click += new System.EventHandler(this._tbReplaceFloat_Click);
             // 
             // _tbReplaceDouble
@@ -461,7 +461,7 @@
             this._tbReplaceDouble.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceDouble.Name = "_tbReplaceDouble";
             this._tbReplaceDouble.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceDouble.Text = "Add Double Tag";
+            this._tbReplaceDouble.Text = "Doubleタグを追加";
             this._tbReplaceDouble.Click += new System.EventHandler(this._tbReplaceDouble_Click);
             // 
             // _tbReplaceByteArray
@@ -471,7 +471,7 @@
             this._tbReplaceByteArray.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceByteArray.Name = "_tbReplaceByteArray";
             this._tbReplaceByteArray.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceByteArray.Text = "Add Byte Array Tag";
+            this._tbReplaceByteArray.Text = "Byte型配列のタグを追加";
             this._tbReplaceByteArray.Click += new System.EventHandler(this._tbReplaceByteArray_Click);
             // 
             // _tbReplaceIntArray
@@ -481,7 +481,7 @@
             this._tbReplaceIntArray.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceIntArray.Name = "_tbReplaceIntArray";
             this._tbReplaceIntArray.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceIntArray.Text = "Add Int Array Tag";
+            this._tbReplaceIntArray.Text = "Int型配列のタグを追加";
             this._tbReplaceIntArray.Click += new System.EventHandler(this._tbReplaceIntArray_Click);
             // 
             // _tbReplaceLongArray
@@ -491,7 +491,7 @@
             this._tbReplaceLongArray.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceLongArray.Name = "_tbReplaceLongArray";
             this._tbReplaceLongArray.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceLongArray.Text = "Add Long Array Tag";
+            this._tbReplaceLongArray.Text = "Long型配列のタグを追加";
             this._tbReplaceLongArray.Click += new System.EventHandler(this._tbReplaceLongArray_Click);
             // 
             // _tbReplaceString
@@ -501,7 +501,7 @@
             this._tbReplaceString.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceString.Name = "_tbReplaceString";
             this._tbReplaceString.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceString.Text = "Add String Tag";
+            this._tbReplaceString.Text = "String型のタグを追加";
             this._tbReplaceString.Click += new System.EventHandler(this._tbReplaceString_Click);
             // 
             // _tbReplaceList
@@ -511,7 +511,7 @@
             this._tbReplaceList.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceList.Name = "_tbReplaceList";
             this._tbReplaceList.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceList.Text = "Add List Tag";
+            this._tbReplaceList.Text = "List型のタグを追加";
             this._tbReplaceList.Click += new System.EventHandler(this._tbReplaceList_Click);
             // 
             // _tbReplaceCompound
@@ -521,50 +521,50 @@
             this._tbReplaceCompound.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._tbReplaceCompound.Name = "_tbReplaceCompound";
             this._tbReplaceCompound.Size = new System.Drawing.Size(23, 22);
-            this._tbReplaceCompound.Text = "Add Compound Tag";
+            this._tbReplaceCompound.Text = "ディレクトリタグの追加";
             this._tbReplaceCompound.Click += new System.EventHandler(this._tbReplaceCompound_Click);
             // 
             // _buttonFind
             // 
             this._buttonFind.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this._buttonFind.Location = new System.Drawing.Point(550, 251);
+            this._buttonFind.Location = new System.Drawing.Point(538, 232);
             this._buttonFind.Name = "_buttonFind";
-            this._buttonFind.Size = new System.Drawing.Size(75, 23);
+            this._buttonFind.Size = new System.Drawing.Size(75, 21);
             this._buttonFind.TabIndex = 2;
-            this._buttonFind.Text = "Find Next";
+            this._buttonFind.Text = "次を検索";
             this._buttonFind.UseVisualStyleBackColor = true;
             this._buttonFind.Click += new System.EventHandler(this._buttonFind_Click);
             // 
             // _buttonReplace
             // 
             this._buttonReplace.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this._buttonReplace.Location = new System.Drawing.Point(631, 251);
+            this._buttonReplace.Location = new System.Drawing.Point(619, 232);
             this._buttonReplace.Name = "_buttonReplace";
-            this._buttonReplace.Size = new System.Drawing.Size(75, 23);
+            this._buttonReplace.Size = new System.Drawing.Size(87, 21);
             this._buttonReplace.TabIndex = 3;
-            this._buttonReplace.Text = "Replace";
+            this._buttonReplace.Text = "置き換え";
             this._buttonReplace.UseVisualStyleBackColor = true;
             this._buttonReplace.Click += new System.EventHandler(this._buttonReplace_Click);
             // 
             // _buttonReplaceAll
             // 
             this._buttonReplaceAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this._buttonReplaceAll.Location = new System.Drawing.Point(631, 280);
+            this._buttonReplaceAll.Location = new System.Drawing.Point(619, 258);
             this._buttonReplaceAll.Name = "_buttonReplaceAll";
-            this._buttonReplaceAll.Size = new System.Drawing.Size(75, 23);
+            this._buttonReplaceAll.Size = new System.Drawing.Size(87, 21);
             this._buttonReplaceAll.TabIndex = 4;
-            this._buttonReplaceAll.Text = "Replace All";
+            this._buttonReplaceAll.Text = "全て置き換え";
             this._buttonReplaceAll.UseVisualStyleBackColor = true;
             this._buttonReplaceAll.Click += new System.EventHandler(this._buttonReplaceAll_Click);
             // 
             // _buttonCancel
             // 
             this._buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this._buttonCancel.Location = new System.Drawing.Point(12, 251);
+            this._buttonCancel.Location = new System.Drawing.Point(12, 232);
             this._buttonCancel.Name = "_buttonCancel";
-            this._buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this._buttonCancel.Size = new System.Drawing.Size(75, 21);
             this._buttonCancel.TabIndex = 5;
-            this._buttonCancel.Text = "Cancel";
+            this._buttonCancel.Text = "キャンセル";
             this._buttonCancel.UseVisualStyleBackColor = true;
             this._buttonCancel.Click += new System.EventHandler(this._buttonCancel_Click);
             // 
@@ -586,18 +586,18 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 28);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 26);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(694, 217);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(694, 200);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
             // FindReplace
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 314);
+            this.ClientSize = new System.Drawing.Size(718, 290);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this._explorerStrip);
             this.Controls.Add(this._buttonCancel);
@@ -608,7 +608,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FindReplace";
-            this.Text = "Find and Replace";
+            this.Text = "検索と置き換え";
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
